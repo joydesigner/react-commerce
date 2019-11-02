@@ -1,5 +1,3 @@
-import { Action } from "rxjs/internal/scheduler/Action";
-
 export const addItemToCart = (cartItems, cartItemToAdd) => {
   const existingCartItem = cartItems.find(
     cartItem => cartItem.id === cartItemToAdd.id
