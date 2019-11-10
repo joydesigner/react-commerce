@@ -1,5 +1,4 @@
 import React from 'react';
-import { auth } from '../../firebase/firebase.utils';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
@@ -25,8 +24,9 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
       <OptionLink to="/contact">
         CONTACT
       </OptionLink>
-
+      {console.log('current user', currentUser)}
       {
+
         currentUser ?
           <OptionLink to="/" as='div' onClick={signOutStart}>SIGN OUT</OptionLink>
           :
