@@ -39,7 +39,6 @@ export const signOutFailure = error => ({
 
 export const checkUserSession = () => ({
   type: UserActionTypes.CHECK_USER_SESSION
-<<<<<<< HEAD
 });
 
 export const signUpStart = userCredentials => ({
@@ -55,6 +54,4 @@ export const signUpSuccess = ({ user, additionalData }) => ({
 export const signUpFailure = error => ({
   type: UserActionTypes.SIGN_UP_FAILURE,
   payload: error
-=======
->>>>>>> 6ba2bffae2949c5320b42f02c7c39871f15ac149
 });
