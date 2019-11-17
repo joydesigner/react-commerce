@@ -3,7 +3,6 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import Header from './components/header/header.component';
 import CheckoutPage from './pages/checkout/checkout.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import HomePage from './pages/homepage/homepage.component';
@@ -11,6 +10,8 @@ import ShopPage from './pages/shop/shop.component';
 
 import { checkUserSession } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selectors';
+
+import { default as Header } from './components/header/header.container';
 
 import './App.css';
 
