@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
 import { default as CartIcon } from '../cart-icon/cart-icon.container';
-import CardDropDown from '../cart-dropdown/cart-dropdown.component';
+import { default as CardDropDown } from '../cart-dropdown/cart-dropdown.container';
 
 import { selectCurrentUser } from '../../redux/user/user.selectors';
 import { signOutStart } from '../../redux/user/user.actions';

@@ -34,7 +34,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
           name="email"
           label="email"
           value={email}
-          handleChange={handleChange}
+          onChange={handleChange}
           required />
         <FormInput
           type="password"
